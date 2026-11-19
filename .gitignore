@@ -1,0 +1,25 @@
+# ASP.NET Core and .NET
+/backend/**/bin/
+/backend/**/obj/
+/backend/**/TestResults/
+.vs/
+*.user
+*.suo
+
+# React and TypeScript
+node_modules/
+/frontend/dist/
+/frontend/build/
+/frontend/coverage/
+*.tsbuildinfo
+
+# Local environment files for the app and Docker Compose
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Local logs and OS files
+*.log
+.DS_Store
+Thumbs.db
