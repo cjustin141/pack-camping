@@ -1,0 +1,6 @@
+@PackWebapi_HostAddress = http://localhost:5214
+
+GET {{PackWebapi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
