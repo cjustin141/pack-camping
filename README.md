@@ -28,3 +28,5 @@ The frontend, backend, and supporting documentation will live in one monorepo.
 Planning stage. Features and technologies listed here describe the intended implementation, not completed functionality. Setup instructions will be added when the application is runnable.
 
 See [PROJECT_PLAN.md](PROJECT_PLAN.md) for requirements, milestones, and the stack and skills checklist.
+
+See [TODO.md](TODO.md) for future application improvements.
