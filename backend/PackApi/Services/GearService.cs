@@ -41,7 +41,7 @@ namespace PackApi.Services
             
         }
 
-        public async Task AddGearAsync(GearRequest gearRequest)
+        public async Task<GearResponse> AddGearAsync(GearRequest gearRequest)
         {
             var gear = new Gear
             {
@@ -52,6 +52,13 @@ namespace PackApi.Services
             };
 
             await _gearRepository.AddAsync(gear);
+
+            return new GearResponse(
+                Id: gear.Id,
+                OwnerId: gear.OwnerId,
+                Name: gear.Name,
+                Category: gear.Category
+            );
         }
 
         public async Task UpdateGearAsync(int id, GearRequest gearRequest)

@@ -6,7 +6,7 @@ namespace PackApi.Services
     {
         Task<IEnumerable<GearResponse>>  GetAllGearAsync();
         Task<GearResponse> GetGearByIdAsync(int id);
-        Task AddGearAsync(GearRequest gear);
+        Task<GearResponse> AddGearAsync(GearRequest gear);
         Task UpdateGearAsync(int id, GearRequest gear);
         Task DeleteGearAsync(int id);
     }

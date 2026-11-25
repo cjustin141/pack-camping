@@ -40,8 +40,8 @@ namespace PackApi.Controllers
         [HttpPost]
         public async Task<IActionResult> Add(GearRequest gearRequest)
         {
-            await _gearService.AddGearAsync(gearRequest);
-            return CreatedAtAction(nameof(GetById), new { id = gearRequest.Id }, gearRequest);
+            var gear = await _gearService.AddGearAsync(gearRequest);
+            return CreatedAtAction(nameof(GetById), new { id = gear.Id }, gear);
         }
 
         [HttpPut("{id}")]
