@@ -2,4 +2,4 @@
 
 ## Backend
 
-- [ ] Add controllers that map service results to version-specific response DTOs so API contracts can evolve independently of service code.
+- [ ] Make controller choose appropriate DTO version rather than service layer so API contracts can evolve independently of service code.
